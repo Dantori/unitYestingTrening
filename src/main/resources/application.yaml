@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: unitTestingTraining
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/unit_testing_training_db?currentSchema=s_users
+    username: postgres
+    password: 111
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
